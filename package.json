@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build",
+    "watch": "textlint-scripts build --watch",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
+  },
+    "prettier": {
+      "singleQuote": false,
+      "printWidth": 120,
+      "tabWidth": 4,
+      "trailingComma": "none"
+    },
+  "devDependencies": {
+    "@textlint/types": "^14.0.4",
+    "@types/node": "^20.14.9",
+    "prettier": "^3.3.2",
+    "textlint-scripts": "^14.0.4",
+    "textlint-tester": "^14.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "name": "textlint-rule-no-isolated-waw",
+  "description": "ensures that the Arabic conjunction waw is properly connected to the following word and not written in isolation",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/textlint-rule/textlint-rule-no-isolated-waw.git"
+  },
+  "author": "aborazmeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/textlint-rule/textlint-rule-no-isolated-waw/issues"
+  },
+  "homepage": "https://github.com/textlint-rule/textlint-rule-no-isolated-waw#readme"
+}
